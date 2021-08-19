@@ -5,7 +5,7 @@ function maximum() {
       maxNumber = arguments[x];
     }
   }
-  console.log(maxNumber);
+  return maxNumber;
 }
 
 maximum(1, 8, 3, 4, 8, 8, 1);
