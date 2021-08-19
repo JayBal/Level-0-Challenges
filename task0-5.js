@@ -1,7 +1,8 @@
-function areaOfATriangle(height, base, c) {
-  var area = (height * base) / c;
+function areaOfATriangle(a, b, c) {
+  var div = 1 / 2;
+  var area = div * (a + b + c);
 
   return area;
 }
 
-areaOfATriangle(6, 2, 2);
+areaOfATriangle(3, 4, 5);
