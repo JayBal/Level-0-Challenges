@@ -1,6 +1,7 @@
-var vowels = ["a", "e", "i", "o", "u"];
 
-function countVowels(toBeSearched) {
+function countVowels(toBeSearched) 
+  var vowels = ["a", "e", "i", "o", "u"];
+
   var charFoundHolder = " ";
   for (let i = 0; i < vowels.length; i++) {
     toBeSearched = toBeSearched.toLowerCase();
