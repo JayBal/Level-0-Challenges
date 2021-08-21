@@ -1,11 +1,12 @@
 function areaOfATriangle(a, b, c){
 
-    var semiPerimeter =  (3 + 4 + 5) / 2;
+  var semiPerimeter =  (a + b + c) / 2;
 
-    var finalArea = Math.sqrt(semiPerimeter * ((semiPerimeter - a) * (semiPerimeter - b) * (semiPerimeter - c)));
+  var finalArea = Math.sqrt(semiPerimeter * ((semiPerimeter - a) * (semiPerimeter - b) * (semiPerimeter - c)));
 
-    return finalArea;
-    }
+  //return finalArea;
+  console.log(finalArea);
+  }
 
-areaOfATriangle(3,4,5);
+areaOfATriangle(6,7,8);
 
