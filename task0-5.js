@@ -4,8 +4,8 @@ function areaOfATriangle(a, b, c){
 
   var finalArea = Math.sqrt(semiPerimeter * ((semiPerimeter - a) * (semiPerimeter - b) * (semiPerimeter - c)));
 
-  //return finalArea;
-  console.log(finalArea);
+  return finalArea;
+  
   }
 
 areaOfATriangle(6,7,8);
