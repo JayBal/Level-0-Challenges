@@ -1,22 +1,20 @@
 function countVowels(toBeSearched) {
-  var vowels = ["a", "e", "i", "o", "u"];
-  var charFoundHolder = "";
-  
-  for (var i = 0; i < toBeSearched.length; i++) {
-    toBeSearched = toBeSearched.toLowerCase();toBeSearched
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  let charFoundHolder = '';
+
+  for (let i = 0; i < toBeSearched.length; i += 1) {
+    toBeSearched = toBeSearched.toLowerCase(); toBeSearched;
     if (vowels.includes(toBeSearched[i])) {
       charFoundHolder += toBeSearched[i];
     }
   }
 
-  //The following segments converts from one type to another to manipulate the final string format
-  var stringFixer = charFoundHolder;
-  var finalVowels = stringFixer.split("");
+  const stringFixer = charFoundHolder;
+  const finalVowels = stringFixer.split('');
 
-  var outputSet = new Set(finalVowels);
-  var finalResults = [...outputSet].join(", "); // Implemeted to clean up the final string format
-  console.log("Vowels: " + finalResults + ".");
-  
+  const outputSet = new Set(finalVowels);
+  const finalResults = [...outputSet].join(', ');
+  console.log(`Vowels: ${finalResults}.`);
 }
 
-countVowels("umuziacademy");
+countVowels('umuziacademy');
