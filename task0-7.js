@@ -1,11 +1,11 @@
 function celsiusToFahrenheit(celsiusValue) {
-  var farHren = (celsiusValue * 9) / 5 + 32;
+  const fahrenheit = (celsiusValue * 9) / 5 + 32;
 
-  return farHren;
+  return fahrenheit;
 }
 
 function fahrenheitToCelsius(fahrenheitValue) {
-  var celSius = ((fahrenheitValue - 32) * 5) / 9;
+  const celSius = ((fahrenheitValue - 32) * 5) / 9;
   return celSius;
 }
 
