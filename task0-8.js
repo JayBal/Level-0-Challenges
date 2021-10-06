@@ -22,7 +22,6 @@ function realNumberToTime(number) {
   } else if (minuteManipulator === 0) {
     pluralDeterminerMinutes = ' minutes';
   }
-
-  console.log(`${hourManipulator + pluralDeterminerHours}, ${minuteManipulator}${pluralDeterminerMinutes}.`);
+  console.log(hourManipulator + pluralDeterminerHours + ', ' + minuteManipulator + pluralDeterminerMinutes +'.');
 }
 realNumberToTime(55);
